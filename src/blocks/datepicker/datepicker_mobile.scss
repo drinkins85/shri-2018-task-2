@@ -1,0 +1,24 @@
+.ui-datepicker {
+  margin-left: -56px;
+}
+
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-prev{
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  padding: 6px;
+}
+
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-prev{
+  padding-top: 4px;
+  box-sizing: border-box;
+}
+
+.ui-widget-content .ui-state-default {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}

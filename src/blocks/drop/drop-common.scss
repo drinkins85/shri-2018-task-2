@@ -1,0 +1,160 @@
+.drop-element, .drop-element:after, .drop-element:before, .drop-element *, .drop-element *:after, .drop-element *:before {
+  box-sizing: border-box;
+}
+
+.drop-element {
+  position: absolute;
+  display: none;
+  z-index: 20;
+}
+.drop-element.drop-open {
+  display: block;
+}
+
+.drop-element.drop-theme-ya {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.drop-element.drop-theme-ya .drop-content {
+  position: relative;
+  background: white;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 8px;
+  min-height: 113px;
+  width: 338px;
+  box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+  border-radius: 8px;
+  text-align: left;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 17px;
+
+}
+
+.drop-element.drop-element-attached-top {
+  margin-top: 2px;
+}
+
+/*arrow*/
+
+.drop-element.drop-theme-ya .drop-arrow {
+  width: 14px;
+  height: 0;
+  border-color: transparent;
+  border-width: 7px;
+  border-style: solid;
+  margin-left: -7px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+
+}
+
+/*bottom*/
+.drop-element.drop-theme-ya.drop-element-attached-top.drop-element-attached-center .drop-arrow {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -7px;
+  border-bottom-color: white;
+}
+
+/* top */
+.drop-element.drop-theme-ya.drop-element-attached-bottom.drop-element-attached-center .drop-arrow {
+  top: 100%;
+  left: 50%;
+  margin-left: -7px;
+  border-top-color: white;
+}
+
+.drop-pinned-right.drop-theme-ya.drop-target-attached-bottom .drop-arrow {
+  bottom: 100%;
+  margin-left: -7px;
+  border-bottom-color: white;
+}
+
+.drop-pinned-right.drop-theme-ya.drop-target-attached-top .drop-arrow {
+  top: 100%;
+  margin-left: -7px;
+  border-top-color: white;
+}
+
+.drop-pinned-left.drop-theme-ya.drop-target-attached-top .drop-arrow {
+  top: 100%;
+  margin-left: -7px;
+  border-top-color: white;
+}
+
+.drop-pinned-left.drop-theme-ya.drop-target-attached-bottom .drop-arrow {
+  bottom: 100%;
+  margin-left: -7px;
+  border-bottom-color: white;
+}
+
+
+.drop-target.drop-enabled {
+  background-color: #99A9B9;
+}
+
+
+.tooltip__title {
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.tooltip__date:after {
+  content: ',';
+  display: inline-block;
+  width: 8px;
+}
+
+.tooltip__room:before {
+  content: '\00B7';
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 17px;
+}
+
+.tooltip-organizer {
+  height: 24px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.tooltip__avatar {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.organizer__name {
+  line-height: 24px;
+  display: inline-block;
+  height: 24px;
+}
+
+.tooltip__users {
+  color: #87909a;
+}
+
+.tooltip__edit {
+  display: block;
+  float: right;
+  margin-top: -6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
