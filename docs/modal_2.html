@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Project</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="img/logo.svg" class="logo">
+            <a href="new-event.html" class="button header__button font_medium" >
+                Создать встречу
+            </a>
+        </div>
+    </header>
+
+
+    <div class="container">
+
+        <div class="datepicker">
+            <button class="datepicker__btn button_type_circle" data-action="decDate">
+                <svg class="icon icon-arrow-left">
+                    <use xlink:href="img/icons_sprite.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <span class="datepicker__text font_medium">14 дек · Сегодня</span>
+            <button class="datepicker__btn button_type_circle" data-action="incDate">
+                <svg class="icon icon-arrow-right">
+                    <use xlink:href="img/icons_sprite.svg#arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="scroll-container">
+
+            <div class="scrolling-area">
+
+
+
+                <div class="over-grid">
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                    <div class="over-grid__hour">
+                        <div class="over-grid__line"></div>
+                    </div>
+                </div>
+
+                <div class="time-panel">
+
+                    <div class="current-time">
+                        <div class="current-time__pointer">
+                            <div class="current-time__time">
+                                10:30
+                            </div>
+                            <div class="current-time__line"></div>
+                        </div>
+                    </div>
+
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label time-panel__label_past">
+                            8:00
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label time-panel__label_past">
+                            9
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label time-panel__label_past">
+                            10
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            11
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            12
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            13
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            14
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            15
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            16
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            17
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            18
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            19
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            20
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            21
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            22
+                        </span>
+                    </div>
+                    <div class="time-panel__hour">
+                        <span class="time-panel__label">
+                            23
+                        </span>
+                    </div>
+                </div>
+
+                <div class="left-column-bg"></div>
+
+                <div class="rows-container">
+
+                    <div class="row-floor">
+                        <div class="floor">
+                            7 Этаж
+                        </div>
+                        <div class="floor-spacer"></div>
+                    </div>
+
+
+                    <div class="row-room">
+                        <div class="room room_disabled">
+                            <span class="room__name font_medium">Ржавый Фред</span>
+                            <span class="room__capacity">3&mdash;6 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row-room">
+                        <div class="room">
+                            <span class="room__name font_medium">Прачечная</span>
+                            <span class="room__capacity">до 10 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 39.96%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 3.33%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 39.96%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 16.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row-room">
+                        <div class="room">
+                            <span class="room__name font_medium">Жёлтый дом</span>
+                            <span class="room__capacity">до 10 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 16.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 3.33%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 6.66%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 16.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 16.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 39.99%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-room">
+                        <div class="room room_disabled">
+                            <span class="room__name font_medium">Оранжевый тюльпан</span>
+                            <span class="room__capacity">до 10 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-floor">
+                        <div class="floor">
+                            6 Этаж
+                        </div>
+                        <div class="floor-spacer"></div>
+                    </div>
+
+                    <div class="row-room">
+                        <div class="room">
+                            <span class="room__name font_medium">Джокер</span>
+                            <span class="room__capacity">3&mdash;6 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 6.66%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 3.33%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 16.65%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 16.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 16.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 6.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 16.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 16.65%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-room">
+                        <div class="room">
+                            <span class="room__name font_medium">Мариванна</span>
+                            <span class="room__capacity">3&mdash;6 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 16.65%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 3.33%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.66%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 13.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 14.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 10.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 10.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 20.65%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-room">
+                        <div class="room">
+                            <span class="room__name font_medium">Тонкий Боб</span>
+                            <span class="room__capacity">3&mdash;6 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 6.65%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 11.33%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.66%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 10.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 15.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 8.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 10.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 16.65%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.99%;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-room">
+                        <div class="room">
+                            <span class="room__name font_medium">Чёрная вдова</span>
+                            <span class="room__capacity">3&mdash;6 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.65%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 14.33%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.66%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 10.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 8.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 14.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 22.65%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-room">
+                        <div class="room">
+                            <span class="room__name font_medium">Белорусский ликёр</span>
+                            <span class="room__capacity">3&mdash;6 человек</span>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeslots">
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 18.65%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 11.33%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.66%;">
+                                </div>
+
+                                <div class="timeslot timeslot_free" style="width: 7.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 9.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 8.66%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="timeslot timeslot_ocupated drop-target" style="width: 14.65%;">
+                                </div>
+                                <div class="timeslot timeslot_free" style="width: 19.65%">
+                                    <div class="sector">
+                                        <svg class="icon icon-plus">
+                                            <use xlink:href="img/icons_sprite.svg#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay open">
+        <div class="modal open">
+            <div class="modal-content">
+                <div class="emoji"><img src="img/emoji_create.png"></div>
+                <h1 class="modal__title">Встреча создана!</h1>
+                <div class="modal__text">
+                    <div class="modal__date">14 декабря, 15:00—17:00</div>
+                    <div class="modal_room">Готем · 4 этаж</div>
+                </div>
+                <button class="button font_medium close-modal" data-modal="#created">Хорошо</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>

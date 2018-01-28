@@ -1,22 +1,31 @@
-.drop-element, .drop-element:after, .drop-element:before, .drop-element *, .drop-element *:after, .drop-element *:before {
+
+
+.drop-element{
   box-sizing: border-box;
+  position: absolute;
+  z-index: 20;
+  display: block;
+  left: 50%;
+  margin-left: -169px;
 }
 
-.drop-element {
+.drop-element:before{
+  content: "";
+  display: block;
   position: absolute;
-  display: none;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-width: 8px;
+  border-style: solid;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -7px;
+  border-bottom-color: white;
   z-index: 20;
 }
-.drop-element.drop-open {
-  display: block;
-}
 
-.drop-element.drop-theme-ya {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.drop-element.drop-theme-ya .drop-content {
+.drop-content {
   position: relative;
   background: white;
   padding-top: 8px;
@@ -32,70 +41,6 @@
   letter-spacing: 0;
   line-height: 17px;
 
-}
-
-.drop-element.drop-element-attached-top {
-  margin-top: 2px;
-}
-
-/*arrow*/
-
-.drop-element.drop-theme-ya .drop-arrow {
-  width: 14px;
-  height: 0;
-  border-color: transparent;
-  border-width: 7px;
-  border-style: solid;
-  margin-left: -7px;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-
-}
-
-/*bottom*/
-.drop-element.drop-theme-ya.drop-element-attached-top.drop-element-attached-center .drop-arrow {
-  bottom: 100%;
-  left: 50%;
-  margin-left: -7px;
-  border-bottom-color: white;
-}
-
-/* top */
-.drop-element.drop-theme-ya.drop-element-attached-bottom.drop-element-attached-center .drop-arrow {
-  top: 100%;
-  left: 50%;
-  margin-left: -7px;
-  border-top-color: white;
-}
-
-.drop-pinned-right.drop-theme-ya.drop-target-attached-bottom .drop-arrow {
-  bottom: 100%;
-  margin-left: -7px;
-  border-bottom-color: white;
-}
-
-.drop-pinned-right.drop-theme-ya.drop-target-attached-top .drop-arrow {
-  top: 100%;
-  margin-left: -7px;
-  border-top-color: white;
-}
-
-.drop-pinned-left.drop-theme-ya.drop-target-attached-top .drop-arrow {
-  top: 100%;
-  margin-left: -7px;
-  border-top-color: white;
-}
-
-.drop-pinned-left.drop-theme-ya.drop-target-attached-bottom .drop-arrow {
-  bottom: 100%;
-  margin-left: -7px;
-  border-bottom-color: white;
-}
-
-
-.drop-target.drop-enabled {
-  background-color: #99A9B9;
 }
 
 
@@ -152,9 +97,127 @@
 .tooltip__edit {
   display: block;
   float: right;
-  margin-top: -6px;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
 }
 
+
+
+
+/*
+
+.drop-element, .drop-element:after, .drop-element:before, .drop-element *, .drop-element *:after, .drop-element *:before {
+  box-sizing: border-box;
+}
+
+.drop-element {
+  position: absolute;
+  display: none;
+  z-index: 20;
+}
+.drop-element.drop-open {
+  display: block;
+}
+
+.drop-element.drop-theme-ya {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.drop-element.drop-theme-ya .drop-content {
+  position: relative;
+  background: white;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 8px;
+  min-height: 113px;
+  width: 338px;
+  box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+  border-radius: 8px;
+  text-align: left;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 17px;
+
+}
+
+.drop-element.drop-element-attached-top {
+  margin-top: 2px;
+}
+
+*/
+
+/*arrow*/
+
+/*
+
+.drop-element.drop-theme-ya .drop-arrow {
+  width: 14px;
+  height: 0;
+  border-color: transparent;
+  border-width: 7px;
+  border-style: solid;
+  margin-left: -7px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+
+}
+
+*/
+
+/*bottom*/
+
+/*
+.drop-element.drop-theme-ya.drop-element-attached-top.drop-element-attached-center .drop-arrow {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -7px;
+  border-bottom-color: white;
+}
+
+*/
+
+/* top */
+
+/*
+.drop-element.drop-theme-ya.drop-element-attached-bottom.drop-element-attached-center .drop-arrow {
+  top: 100%;
+  left: 50%;
+  margin-left: -7px;
+  border-top-color: white;
+}
+
+.drop-pinned-right.drop-theme-ya.drop-target-attached-bottom .drop-arrow {
+  bottom: 100%;
+  margin-left: -7px;
+  border-bottom-color: white;
+}
+
+.drop-pinned-right.drop-theme-ya.drop-target-attached-top .drop-arrow {
+  top: 100%;
+  margin-left: -7px;
+  border-top-color: white;
+}
+
+.drop-pinned-left.drop-theme-ya.drop-target-attached-top .drop-arrow {
+  top: 100%;
+  margin-left: -7px;
+  border-top-color: white;
+}
+
+.drop-pinned-left.drop-theme-ya.drop-target-attached-bottom .drop-arrow {
+  bottom: 100%;
+  margin-left: -7px;
+  border-bottom-color: white;
+}
+
+
+.drop-target.drop-enabled {
+  background-color: #99A9B9;
+}
+
+
+*/

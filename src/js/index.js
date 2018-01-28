@@ -19,7 +19,7 @@
 
 // = input_clear.js
 
-//= ../blocks/modal/modal.js
+// = ../blocks/modal/modal.js
 
 
 

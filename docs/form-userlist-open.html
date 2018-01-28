@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Project</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="img/logo.svg" class="logo">
+         </div>
+    </header>
+
+    <div class="container">
+
+        <form class="form">
+            <div class="form-body">
+                <a href="index.html" class="button_type_circle form__close">
+                    <svg class="icon icon-close">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons_sprite.svg#close"></use>
+                    </svg>
+                </a>
+                <h1 class="form__title">Новая встреча</h1>
+
+                <div class="form-row">
+                    <div class="form-col-left">
+                        <label for="theme" class="input-label">Тема</label>
+                        <div class="input-container">
+                            <input type="text" id="theme" class="form-input input-text clearable" required placeholder="О чём будете говорить?">
+                            <span class="clearInput">
+                                <svg class="icon icon-close">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons_sprite.svg#close"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-col-right">
+                        <div class="datetime">
+                            <div class="date">
+                                <label class="input-label" for="date">Дата <span class="timelabel">и время</span></label>
+                                <input type="date" value="" id="date" required class="form-input input-date date-format" >
+                            </div>
+                            <div class="time">
+                                <div class="time-start">
+                                    <label class="input-label" for="timeStart">Начало</label>
+                                    <input type="time" id="timeStart" class="form-input input-time">
+                                </div>
+                                <div class="time-divider"></div>
+                                <div class="time-end">
+                                    <label class="input-label" for="timeEnd">Конец</label>
+                                    <input type="time" id="timeEnd" class="form-input input-time">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="form-row">
+                    <div class="form-col-left">
+                        <div class="user-input-container">
+                            <label for="users" class="input-label">Участники</label>
+                            <input type="text" id="users" class="ui-autocomplete-input custom-combobox form-input user-input" placeholder="Например, Тор Одинович">
+                            <div class="Select-menu-outer">
+                                <div class="Select-menu-item" >
+                                    <div class='Select-menu-item__avatar'>
+                                        <img src="img/weider.jpg"/>
+                                    </div>
+                                    <span class="Select-menu-item__name">
+                                        Дарт Вейдер
+                                    </span>
+                                    <span class="Select-menu-item__floor">
+                                    5 этаж
+                                    </span>
+                                </div>
+                                <div class="Select-menu-item" >
+                                    <div class='Select-menu-item__avatar'>
+                                        <img src="img/weider.jpg"/>
+                                    </div>
+                                    <span class="Select-menu-item__name">
+                                        Томас Андерсон
+                                    </span>
+                                    <span class="Select-menu-item__floor">
+                                    2 этаж
+                                    </span>
+                                </div>
+                                <div class="Select-menu-item" >
+                                    <div class='Select-menu-item__avatar'>
+                                        <img src="img/weider.jpg"/>
+                                    </div>
+                                    <span class="Select-menu-item__name">
+                                        Лекс Лютер
+                                    </span>
+                                    <span class="Select-menu-item__floor">
+                                    7 этаж
+                                    </span>
+                                </div>
+                                <div class="Select-menu-item" >
+                                    <div class='Select-menu-item__avatar'>
+                                        <img src="img/weider.jpg"/>
+                                    </div>
+                                    <span class="Select-menu-item__name">
+                                        Дарт Вейдер
+                                    </span>
+                                    <span class="Select-menu-item__floor">
+                                    5 этаж
+                                    </span>
+                                </div>
+                                <div class="Select-menu-item" >
+                                    <div class='Select-menu-item__avatar'>
+                                        <img src="img/weider.jpg"/>
+                                    </div>
+                                    <span class="Select-menu-item__name">
+                                        Кларк Кент
+                                    </span>
+                                    <span class="Select-menu-item__floor">
+                                    2 этаж
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checked-users"></div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="form-col-right">
+
+                        <div class="radio-group">
+
+                            <div class="recommendation-header">
+                                <span class="radio__title_checked">Ваша переговорка</span>
+                                <span class="radio__title_not_checked">Рекомендованные переговорки</span>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" class="recommend-room" id="roomId-1" name="room" required />
+                                <label for="roomId-1">
+                                <span class="room-time">
+                                    16:00—16:30
+                                </span>
+                                    <span class="room-name">
+                                       Готем
+                                </span>
+                                    <span class="room-floor">
+                                   4 этаж
+                                </span>
+                                </label>
+                                <span class="clear-radio">
+                                <svg class="icon icon-close_color_white">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons_sprite.svg#close"></use>
+                                </svg>
+                            </span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="recommend-room" id="roomId-2" name="room"  required/>
+                                <label for="roomId-2">
+                                <span class="room-time">
+                                   16:00—16:30
+                                </span>
+                                    <span class="room-name">
+                                   Поле непаханное
+                                </span>
+                                    <span class="room-floor">
+                                   4 этаж
+                                </span>
+                                </label>
+                                <span class="clear-radio">
+                                <svg class="icon icon-close_color_white">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons_sprite.svg#close"></use>
+                                </svg>
+                            </span>
+                            </div>
+
+                            <div class="radio">
+                                <input type="radio" class="recommend-room" id="roomId-3" name="room"  required/>
+                                <label for="roomId-3">
+                                <span class="room-time">
+                                   16:00—16:30
+                                </span>
+                                    <span class="room-name">
+                                   Тёмная башня
+                                </span>
+                                    <span class="room-floor">
+                                   4 этаж
+                                </span>
+                                </label>
+                                <span class="clear-radio">
+                                <svg class="icon icon-close_color_white">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons_sprite.svg#close"></use>
+                                </svg>
+                            </span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="form-message">
+                Выберите переговорку
+            </div>
+
+
+            <div class="form-footer">
+                <button type="reset" class="button button_color_gray font_medium">Отмена</button>
+                <button type="submit" onclick="$('.form-message').addClass('form-message__visible');" class="button button_type_submit font_medium">Создать встречу</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
