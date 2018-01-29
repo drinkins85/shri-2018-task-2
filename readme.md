@@ -17,6 +17,6 @@
 
 [Форма: список пользователей](https://drinkins85.github.io/shri-2018-task-2/form-userlist-open.html)
 
-[Форма: список Редактирование](https://drinkins85.github.io/shri-2018-task-2/form-edit.html)
+[Форма: редактирование](https://drinkins85.github.io/shri-2018-task-2/form-edit.html)
 
 
