@@ -1,0 +1,75 @@
+.datePickerSelector {
+  z-index: 30;
+  display: block;
+  position: absolute;
+  left: 24px;
+  top: 118px;
+  width: 604px;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px 0 rgba(0,44,92,0.28);
+  border-radius: 4px;
+  padding: 16px;
+  font-family: inherit;
+}
+
+.datePickerSelectorTable{
+  width: 100%;
+  font-size: 13px;
+  background-color: #f6f7f9;
+}
+
+.datePickerSelectorTableHeader{
+  background-color: white;
+}
+
+.datePickerSelectorTableHeader td{
+  text-align: center;
+  padding: 0 5px 10px 5px;
+}
+
+.datePickerSelectorTableHeaderCurrentMonth{
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.datePickerSelectorTableDaysHeader td{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 5px;
+}
+
+
+.datePickerSelectorTableDaysNotInMonth,
+.datePickerSelectorTableDaysSelected,
+.datePickerSelectorTableDays {
+  text-align: center;
+  border: 1px solid rgba(19,100,205,0.10);
+  letter-spacing: 0.4px;
+  padding: 5px 8px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #858E98;
+  cursor: pointer;
+}
+
+
+.datePickerSelectorTableDays{
+
+}
+
+.datePickerSelectorTableDaysSelected{
+  background-color: #007DFF;
+  color: white;
+}
+
+.datePickerSelectorTableDaysNotInMonth{
+  opacity: 0.6;
+}
+.datePickerSelectorTableDaysNotInMonth:hover,
+.datePickerSelectorTableDaysSelected:hover,
+.datePickerSelectorTableDays:hover {
+  background-color: #98A9B9;
+  color: white;
+}

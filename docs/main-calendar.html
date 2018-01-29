@@ -11,7 +11,7 @@
     <header>
         <div class="header">
             <img src="img/logo.svg" class="logo">
-            <a href="form.html" class="button header__button font_medium" >
+            <a href="new-event.html" class="button header__button font_medium" >
                 Создать встречу
             </a>
         </div>
@@ -19,6 +19,7 @@
 
 
     <div class="container">
+
         <div class="datepicker">
             <button class="datepicker__btn button_type_circle" data-action="decDate">
                 <svg class="icon icon-arrow-left">
@@ -31,6 +32,87 @@
                     <use xlink:href="img/icons_sprite.svg#arrow-right"></use>
                 </svg>
             </button>
+        </div>
+
+        <div class="datePickerSelector active">
+            <table class="datePickerSelectorTable">
+                <tbody>
+                <tr class="datePickerSelectorTableHeader">
+                    <td>
+                        <button class="datepicker__btn button_type_circle">
+                            <svg class="icon icon-arrow-left">
+                                <use href="img/icons_sprite.svg#arrow-left"></use>
+                            </svg>
+                        </button></td>
+                    <td class="datePickerSelectorTableHeaderCurrentMonth" colspan="5">январь 2018</td>
+                    <td>
+                        <button class="datepicker__btn button_type_circle">
+                            <svg class="icon icon-arrow-right">
+                                <use href="img/icons_sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="datePickerSelectorTableDaysHeader">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                </tr>
+                <tr>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="31" data-month="11">31</td>
+                    <td class="datePickerSelectorTableDays" data-day="1" data-month="0">1</td>
+                    <td class="datePickerSelectorTableDays" data-day="2" data-month="0">2</td>
+                    <td class="datePickerSelectorTableDays" data-day="3" data-month="0">3</td>
+                    <td class="datePickerSelectorTableDays" data-day="4" data-month="0">4</td>
+                    <td class="datePickerSelectorTableDays" data-day="5" data-month="0">5</td>
+                    <td class="datePickerSelectorTableDays" data-day="6" data-month="0">6</td>
+                </tr>
+                <tr><td class="datePickerSelectorTableDays" data-day="7" data-month="0">7</td>
+                    <td class="datePickerSelectorTableDays" data-day="8" data-month="0">8</td>
+                    <td class="datePickerSelectorTableDays" data-day="9" data-month="0">9</td>
+                    <td class="datePickerSelectorTableDays" data-day="10" data-month="0">10</td>
+                    <td class="datePickerSelectorTableDays" data-day="11" data-month="0">11</td>
+                    <td class="datePickerSelectorTableDays" data-day="12" data-month="0">12</td>
+                    <td class="datePickerSelectorTableDays" data-day="13" data-month="0">13</td>
+                </tr>
+                <tr><td class="datePickerSelectorTableDays" data-day="14" data-month="0">14</td>
+                    <td class="datePickerSelectorTableDays" data-day="15" data-month="0">15</td>
+                    <td class="datePickerSelectorTableDays" data-day="16" data-month="0">16</td>
+                    <td class="datePickerSelectorTableDays" data-day="17" data-month="0">17</td>
+                    <td class="datePickerSelectorTableDays" data-day="18" data-month="0">18</td>
+                    <td class="datePickerSelectorTableDays" data-day="19" data-month="0">19</td>
+                    <td class="datePickerSelectorTableDays" data-day="20" data-month="0">20</td>
+                </tr>
+                <tr><td class="datePickerSelectorTableDays" data-day="21" data-month="0">21</td>
+                    <td class="datePickerSelectorTableDays" data-day="22" data-month="0">22</td>
+                    <td class="datePickerSelectorTableDays" data-day="23" data-month="0">23</td>
+                    <td class="datePickerSelectorTableDays" data-day="24" data-month="0">24</td>
+                    <td class="datePickerSelectorTableDays" data-day="25" data-month="0">25</td>
+                    <td class="datePickerSelectorTableDays" data-day="26" data-month="0">26</td>
+                    <td class="datePickerSelectorTableDays" data-day="27" data-month="0">27</td>
+                </tr>
+                <tr><td class="datePickerSelectorTableDays" data-day="28" data-month="0">28</td>
+                    <td class="datePickerSelectorTableDaysSelected" data-day="29" data-month="0">29</td>
+                    <td class="datePickerSelectorTableDays" data-day="30" data-month="0">30</td>
+                    <td class="datePickerSelectorTableDays" data-day="31" data-month="0">31</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="1" data-month="1">1</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="2" data-month="1">2</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="3" data-month="1">3</td>
+                </tr>
+                <tr><td class="datePickerSelectorTableDaysNotInMonth" data-day="4" data-month="1">4</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="5" data-month="1">5</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="6" data-month="1">6</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="7" data-month="1">7</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="8" data-month="1">8</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="9" data-month="1">9</td>
+                    <td class="datePickerSelectorTableDaysNotInMonth" data-day="10" data-month="1">10</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="scroll-container">

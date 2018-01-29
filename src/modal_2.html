@@ -21,7 +21,17 @@
     <div class="container">
 
         <div class="datepicker">
-            //= blocks/datepicker/datepicker.html
+            <button class="datepicker__btn button_type_circle" data-action="decDate">
+                <svg class="icon icon-arrow-left">
+                    <use xlink:href="img/icons_sprite.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <span class="datepicker__text font_medium">14 дек · Сегодня</span>
+            <button class="datepicker__btn button_type_circle" data-action="incDate">
+                <svg class="icon icon-arrow-right">
+                    <use xlink:href="img/icons_sprite.svg#arrow-right"></use>
+                </svg>
+            </button>
         </div>
 
         <div class="scroll-container">
